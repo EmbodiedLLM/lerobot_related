@@ -227,7 +227,7 @@ def run_lekiwi(robot_config):
             elapsed = time.time() - loop_start_time
             time.sleep(
                 # max(0.033 - elapsed, 0)
-                max(0.053 - elapsed, 0)
+                max(0.013 - elapsed, 0)
             )  # If robot jitters increase the sleep and monitor cpu load with `top` in cmd
     except KeyboardInterrupt:
         print("Shutting down LeKiwi server.")
